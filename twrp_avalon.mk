@@ -14,7 +14,7 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 $(call inherit-product, device/oneplus/avalon/device.mk)
 
 # Inherit from fox_avalon configs
-$(call inherit-product, device/oneplus/avalon/fox_avalon.mk)
+# $(call inherit-product, device/oneplus/avalon/fox_avalon.mk)
 
 # OEM Info (automatically taken from device tree path)
 BOARD_VENDOR := oneplus
