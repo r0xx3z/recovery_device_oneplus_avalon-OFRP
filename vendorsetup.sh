@@ -23,13 +23,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk-v30.7.zip
 export TW_DEFAULT_LANGUAGE="en"
 export LC_ALL="C"
-export ALLOW_MISSING_DEPENDENCIES=true
-
-# Build environment stuffs
-export FOX_BUILD_DEVICE="Nord 4"
-export TARGET_DEVICE_ALT="avalon, OP5E93L1"
-export FOX_TARGET_DEVICES="avalon, OP5E93L1"
 export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
+export ALLOW_MISSING_DEPENDENCIES=true
 
 # Partitions
 export FOX_AB_DEVICE=1
@@ -56,9 +51,13 @@ export FOX_INSTALLER_DEBUG_MODE=1
 export FOX_ENABLE_APP_MANAGER=1
 export FOX_INSTALLER_DISABLE_AUTOREBOOT=1
 
+# KernelSU-Next / SukiSu support
+export FOX_ENABLE_KERNELSU_NEXT_SUPPORT=1
+export FOX_ENABLE_SUKISU_SUPPORT=1
+    
 # Maintainer & Build Info
 export FOX_BUILD_TYPE="Testing"
-export FOX_MAINTAINER_PATCH_VERSION="0"
+export FOX_MAINTAINER_PATCH_VERSION="1"
 export OF_MAINTAINER="MKR"
 	
 else
