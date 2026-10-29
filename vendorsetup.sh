@@ -56,8 +56,8 @@ export FOX_ENABLE_KERNELSU_NEXT_SUPPORT=1
 export FOX_ENABLE_SUKISU_SUPPORT=1
     
 # Maintainer & Build Info
-export FOX_BUILD_TYPE="Testing"
-export FOX_MAINTAINER_PATCH_VERSION="1"
+export FOX_BUILD_TYPE="stable"
+export FOX_MAINTAINER_PATCH_VERSION="0"
 export OF_MAINTAINER="MKR"
 	
 else
