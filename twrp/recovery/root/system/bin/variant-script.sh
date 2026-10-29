@@ -33,5 +33,4 @@ echo $variant
                 resetprop ro.product.odm.model "CPH2663"
                 ;;
         esac
-        ;;
 exit 0
