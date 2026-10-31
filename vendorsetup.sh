@@ -52,8 +52,8 @@ export FOX_ENABLE_APP_MANAGER=1
 export FOX_INSTALLER_DISABLE_AUTOREBOOT=1
 
 # KernelSU-Next / SukiSu support
+export FOX_ENABLE_KERNELSU_SUPPORT=1
 export FOX_ENABLE_KERNELSU_NEXT_SUPPORT=1
-export FOX_ENABLE_SUKISU_SUPPORT=1
     
 # Maintainer & Build Info
 export FOX_BUILD_TYPE="stable"
