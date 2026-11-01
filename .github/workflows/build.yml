@@ -11,7 +11,7 @@ name: OrangeFox - Build
 on:
   push:
     branches:
-      - 'android-12.1'
+      - 'fox_14.1'
   workflow_dispatch:
     
 jobs:
@@ -20,9 +20,9 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      MANIFEST_BRANCH: '12.1'
+      MANIFEST_BRANCH: '14.1'
       DEVICE_TREE: 'https://github.com/r0xx3z/recovery_device_oneplus_avalon-OFRP'
-      DEVICE_TREE_BRANCH: 'android-12.1'
+      DEVICE_TREE_BRANCH: 'fox_14.1'
       DEVICE_PATH: 'device/oneplus/avalon'
       DEVICE_NAME: 'avalon'
       BUILD_TARGET: 'recovery'
@@ -48,7 +48,7 @@ jobs:
         sudo bash setup/android_build_env.sh
       
     - name: 🔧 Set-up Manifest
-      if: env.MANIFEST_BRANCH == '12.1'
+      if: env.MANIFEST_BRANCH == '14.1'
       run: |
         mkdir -p ${GITHUB_WORKSPACE}/OrangeFox
         cd ${GITHUB_WORKSPACE}/OrangeFox
@@ -72,7 +72,7 @@ jobs:
         source build/envsetup.sh
         export ALLOW_MISSING_DEPENDENCIES=true
         set -e
-        lunch twrp_${{ env.DEVICE_NAME }}-eng && make clean && mka adbd ${{ env.BUILD_TARGET }}image
+        lunch twrp_${{ env.DEVICE_NAME }}-ap2a-eng && make clean && mka adbd ${{ env.BUILD_TARGET }}image
 
     - name: ⏰ Set Release Properties
       run: |

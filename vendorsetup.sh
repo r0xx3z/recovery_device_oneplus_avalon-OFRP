@@ -51,13 +51,13 @@ export FOX_INSTALLER_DEBUG_MODE=1
 export FOX_ENABLE_APP_MANAGER=1
 export FOX_INSTALLER_DISABLE_AUTOREBOOT=1
 
-# KernelSU-Next / SukiSu support
+# KernelSU / Next support
 export FOX_ENABLE_KERNELSU_SUPPORT=1
 export FOX_ENABLE_KERNELSU_NEXT_SUPPORT=1
     
 # Maintainer & Build Info
-export FOX_BUILD_TYPE="stable"
-export FOX_MAINTAINER_PATCH_VERSION="0"
+export FOX_BUILD_TYPE="Testing"
+export FOX_MAINTAINER_PATCH_VERSION="1"
 export OF_MAINTAINER="MKR"
 	
 else
